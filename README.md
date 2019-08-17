@@ -8,7 +8,7 @@ mkdir -p /aria2-data/{download,appdata,ariacache}
 
 #运行
 docker run --name aria2-web \
-	-p 8600:8600 -p 8680:8680 \
+	-p 6800:6800 -p 8680:8680 \
 	-v /aria2-data/download:/data -v /aria2-data/appdata:/appdata -v /aria2-data/ariacache:/root/.cache \
 	lunnlew/aria2-web:latest
 ```

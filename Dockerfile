@@ -27,6 +27,8 @@ ADD aria2 /app/aria2
 ADD nginx-app.conf /etc/nginx/conf.d/default.conf
 ADD start.sh /app/start.sh
 
+RUN chmod +x /app/start.sh && chmod +x /app/aria2/aria2c.sh
+
 VOLUME /data
 VOLUME /appdata
 

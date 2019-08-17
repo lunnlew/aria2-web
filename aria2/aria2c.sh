@@ -6,7 +6,7 @@ if [ ! -f ${sessionfile} ];then
 	touch ${sessionfile}
 fi
 
-list=`wget -qO- https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt|awk NF|sed ":a;N;s/\n/,/g;ta"`
+list=`wget -qO- https://gitee.com/lunnlew/trackerslist/raw/master/trackers_best_ip.txt|awk NF|sed ":a;N;s/\n/,/g;ta"`
 
 if [ -z "`grep "bt-tracker" /app/aria2/conf/aria2.conf`" ]; then
     sed -i '$a bt-tracker='${list} /app/aria2/conf/aria2.conf
