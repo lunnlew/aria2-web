@@ -16,6 +16,6 @@ docker run --name aria2-web \
 
 访问链接`http://127.0.0.1:8680`，端口`8680`提供ui服务，默认为aria2下载界面
 
-`http://127.0.0.1:8680/files/`为文件管理服务
+`http://127.0.0.1:8680/files/`为文件管理服务，默认用户admin，密码admin
 
 具体IP使用你自己的环境IP
