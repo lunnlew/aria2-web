@@ -30,6 +30,6 @@ ADD start.sh /app/start.sh
 VOLUME /data
 VOLUME /appdata
 
-EXPOSE 80 6800
+EXPOSE 8680 6800
 
 CMD ["/app/start.sh"]
